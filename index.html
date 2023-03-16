@@ -1,25 +1,248 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <link rel="stylesheet" href="./css/style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Site</title>
+	<title>Web Sayfam</title>
+	<style>
+		/* navigation bar */
+		nav {
+			background-color: #ffa600;
+			border-radius: 10px;
+			padding: 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-family: Arial, sans-serif;
+			font-size: 18px;
+			color: #fff;
+		}
+		
+		nav ul {
+			list-style: none;
+			display: flex;
+			flex-direction: row;
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav li {
+			margin: 0 10px;
+		}
+		
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			padding: 10px;
+			border-radius: 5px;
+		}
+		
+		nav a:hover {
+			background-color: #555;
+		}
+		
+		/* login and register buttons */
+		#login, #register {
+			background-color: #695615;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin: 10px;
+			font-size: 18px;
+			font-family: Arial, sans-serif;
+		}
+		
+		#login:hover, #register:hover {
+			background-color: #555;
+		}
+		
+		/* main content */
+		main {
+			padding: 20px;
+			font-family: Arial, sans-serif;
+			font-size: 18px;
+			color: #333;
+		}
+		
+		/* circular shapes */
+		.circle {
+			border-radius: 50%;
+		}
+		
+		/* menu items */
+		.menu-item {
+			display: flex;
+			margin-bottom: 10px;
+			align-items: center;
+			font-family: Arial, sans-serif;
+			font-size: 18px;
+			color: #333;
+		}
+		
+		.menu-item img {
+			width: 100px;
+			height: 100px;
+			margin-right: 20px;
+			border-radius: 50%;
+		}
+		
+		.menu-item h3 {
+			margin: 0;
+			font-size: 24px;
+		}
+		
+		.menu-item p {
+			margin: 0;
+		}
+		main {
+  position: relative;
+  z-index: 1;
+}
+
+.main-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://img3.stockfresh.com/files/n/natali_brill/m/55/7662207_stock-vector-fast-food-hamburger-doodle-set.jpg');
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+
+
+		
+    #clock {
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			background-color: #ddd;
+			padding: 10px;
+			font-size: 24px;
+		}
+		footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.social-media a {
+  margin-right: 20px;
+}
+
+.social-media img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+
+	</style>
 </head>
 <body>
-    <table class="center">
-        <tr>
-            <td>satır1 sütun1</td>
-            <td>satır1 sütun2</td>
-            <td>satır1 sütun3</td>
-        </tr>
-        
-        <tr>
-            <td>satır2 sütun1</td>
-            <td>satır2 sütun2</td>
-            <td>satır2 sütun3</td>
-        </tr>
-    </table>
-</body>
-</html>
+	<nav>
+		<div class="logo">
+			<img src="https://kebanet.restapp.com/uploads/36384/theme/a35554ea00f9f65bf7c6ef6051d4e98e.PNG	" alt="My Website Logo">
+		  </div>
+
+		<ul>
+			<li><a href="#">Anasayfa</a></li>
+			<li><a href="https://softito.com.tr/">Eğitimler</a></li>
+			<li><a href="iletisim.html">İletişim</a></li>
+			<li><a href="#">Biz Kimiz</a></li>
+		</ul>
+		<div>
+			<button id="login">Giriş</button>
+			<button id="register">Kayıt Ol</button>
+		</div>
+	</nav>
+	
+	<main>
+		
+			<div class="main-background"></div>
+			<div class="content">
+			  <h1>Menümüz</h1>
+			  
+			</div>
+		  
+		  
+		<div class="menu-item">
+			<img src="C:\Users\MONSTER\Desktop\htm\burgerk1.jpg" alt="Hamburger">
+			<div>
+				<h3>BigMac</h3>
+				<p>150 TL</p>
+			</div>
+		</div>
+		<div class="menu-item">
+			<img src="C:\Users\MONSTER\Desktop\htm\burgerk2.jpg" alt="Cheeseburger">
+      <div>
+      <h3>Cheeseburger</h3>
+      <p>120 TL</p>
+      </div>
+      </div>
+      <div class="menu-item">
+      <img src="C:\Users\MONSTER\Desktop\htm\burgerk3.jfif" alt="Chicken Burger">
+      <div>
+      <h3>Chicken Burger</h3>
+      <p>90 TL</p>
+      </div>
+      </div>
+      </main>
+	  <footer>
+		<div class="social-media">
+		  <a href="#">
+			<img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook">
+		  </a>
+		  <a href="#">
+			<img src="https://logos-world.net/wp-content/uploads/2020/04/Twitter-Logo.png" alt="Twitter">
+		  </a>
+		  <a href="#">
+			<img src="https://logos-world.net/wp-content/uploads/2020/04/Instagram-Logo.png" alt="Instagram">
+		  </a>
+		</div>
+		<p>&copy; Burger Restoran </p>
+	  </footer>
+	  
+
+
+      <div id="clock"></div>
+
+	<script>
+		function showTime() {
+			var date = new Date();
+			var h = date.getHours();
+			var m = date.getMinutes();
+			var s = date.getSeconds();
+			var day = date.getDate();
+			var month = date.getMonth() + 1;
+			var year = date.getFullYear();
+
+			h = (h < 10) ? "0" + h : h;
+			m = (m < 10) ? "0" + m : m;
+			s = (s < 10) ? "0" + s : s;
+			day = (day < 10) ? "0" + day : day;
+			month = (month < 10) ? "0" + month : month;
+
+			var time = h + ":" + m + ":" + s;
+			var today = day + "." + month + "." + year;
+			document.getElementById("clock").innerHTML = time + "<br>" + today;
+
+			setTimeout(showTime, 1000);
+		}
+
+		showTime();
+	</script>
+
+      
+      </body>
+      </html>
